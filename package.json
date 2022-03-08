@@ -1,0 +1,47 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1",
+    "joi": "^17.6.0",
+    "pg": "^8.7.3",
+    "redis": "^4.0.4",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
+  },
+  "name": "ecommerce-backend",
+  "description": "ecommerce-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "start:dev": "nodemon ./src/app.js",
+    "lint": "eslint \"**/*.js\"",
+    "lint:fix": "eslint \"**/*.js\" --fix",
+    "test": "jest --verbose --runInBand",
+    "test:cov": "jest --coverage --runInBand",
+    "test:watch": "jest --watch --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IagoSCandido/ecommerce-backend.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "node",
+    "express"
+  ],
+  "author": "Iago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IagoSCandido/ecommerce-backend/issues"
+  },
+  "homepage": "https://github.com/IagoSCandido/ecommerce-backend#readme"
+}
