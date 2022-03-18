@@ -7,7 +7,7 @@ export default class HealthCheck {
 
     try {
       await sequelize.authenticate();
-      return 'Sequelize connected sucessfully';
+      log.info('Sequelize connected sucessfully');
 
     } catch (error) {
       log.error(error);
